@@ -676,6 +676,7 @@ input::-webkit-input-placeholder {
 .footer-wrapper {
   max-width: 1200px;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 .footer-address {
@@ -704,12 +705,12 @@ input::-webkit-input-placeholder {
 }
 
 .social-icon-pinterest {
-  background-image: url(/svg/001-pinterest.svg);
+  background-image: url(../svg/001-pinterest.svg);
   margin-right: 30px;
 }
 
 .social-icon-tumblr {
-  background-image: url(/svg/003-tumblr.svg);
+  background-image: url(../svg/003-tumblr.svg);
 }
 
 /* Copyright */
