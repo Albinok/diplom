@@ -371,7 +371,7 @@ body {
 }
 
 .search-field {
-  height: 48px;
+  height: 49px;
   width: 222px;
   border: none;
   background: #f4f7f6;
@@ -388,8 +388,8 @@ input::-webkit-input-placeholder {
 }
 
 .search-button {
-  width: 48px;
-  height: 48px;
+  width: 49px;
+  height: 49px;
   background-image: url(../svg/search.svg);
   background-size: 18px;
   background-repeat: no-repeat;
@@ -742,6 +742,9 @@ input::-webkit-input-placeholder {
   .tablet {
     padding-left: 4px;
   }
+  .trend-indent {
+    padding-left: 0;
+  }
 
   .tablet-horizontal {
     padding-top: 4px;
@@ -846,7 +849,19 @@ input::-webkit-input-placeholder {
     margin-left: 0;
   }
 
-  aside {
+  .aside {
+    width: 100%;
+  }
+  .aside-section {
+    width: 100%;
+  }
+  .group-search {
+    width: 100%;
+  }
+  .search-button {
+    flex-shrink: 0;
+  }
+  .search-field {
     width: 100%;
   }
   .products-items {
