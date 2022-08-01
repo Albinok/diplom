@@ -866,6 +866,16 @@ input::-webkit-input-placeholder {
   }
   .products-items {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  .products-name {
+    font-size: 16px;
+  }
+  .product {
+    box-sizing: inherit;
+  }
+  .info-img-product {
+    width: 100%;
   }
   /* //////menu///////// */
   .menu-toggle {
