@@ -146,25 +146,12 @@ body {
   display: flex;
 }
 
-.trend {
-  height: 320px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 20px;
-  z-index: 0;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
 .trend-text {
   padding: 30px;
   border: 3px solid #b59f5b;
 }
 
-.trend-name {
+.trend-link {
   color: #ffffff;
   text-decoration: none;
   font-weight: 700;
@@ -185,6 +172,19 @@ body {
   color: #b59f5b;
   font-size: 14px;
   font-weight: 700;
+}
+.trend {
+  height: 320px;
+  background: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  z-index: 0;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .trend_garden {
@@ -230,6 +230,11 @@ body {
 .info-preview {
   object-fit: cover;
   width: 380px;
+  display: block;
+}
+
+.info-img {
+  width: 100%;
 }
 
 .info {
@@ -734,7 +739,6 @@ input::-webkit-input-placeholder {
     flex-wrap: wrap;
     margin-bottom: 49px;
   }
-
   .trend-wrapper {
     width: 50%;
   }
@@ -750,6 +754,7 @@ input::-webkit-input-placeholder {
   .trend-four {
     padding-top: 4px;
   }
+
   .info {
     flex-wrap: wrap;
     margin-right: 33px;
@@ -758,6 +763,7 @@ input::-webkit-input-placeholder {
 
   .info-text {
     padding-top: 17px;
+    margin: 0;
   }
 
   .info-name {
@@ -765,6 +771,9 @@ input::-webkit-input-placeholder {
     margin-bottom: 39px;
   }
 
+  .info-preview {
+    width: 100%;
+  }
   .info-img-link {
     width: 100%;
   }
@@ -791,6 +800,7 @@ input::-webkit-input-placeholder {
     flex-wrap: wrap;
   }
 }
+
 @media (min-width: 641px) and (orientation: landscape) {
   .trend-wrapper {
     width: 25%;
