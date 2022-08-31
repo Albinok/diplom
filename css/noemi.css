@@ -48,22 +48,20 @@ body {
   right: 0;
   left: 0;
   top: 60px;
-}
-.background {
-  position: relative;
   z-index: 1;
 }
-.background::after {
+
+.popup::after {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background: #000;
   opacity: 0.6;
-  z-index: 0;
-} 
+  z-index: -1;
+}
 .popup-container {
   background: #ffffff;
   padding: 55px 30px;
@@ -387,7 +385,6 @@ body {
   object-fit: cover;
   max-width: 380px;
 }
-
 
 .info {
   display: flex;
@@ -879,10 +876,10 @@ input::-webkit-input-placeholder {
 /* /////////MEDIA */
 
 @media (max-width: 1199px) {
-   .menu-list-item {
+  .menu-list-item {
     display: none;
   }
-   .menu-toggle {
+  .menu-toggle {
     right: 15px;
     top: 0;
     width: 23px;
@@ -896,14 +893,14 @@ input::-webkit-input-placeholder {
     cursor: pointer;
     opacity: 0;
   }
-  
+
   .menu-line {
     width: 100%;
     height: 4px;
     border-radius: 10px;
     background-color: #ffffff;
   }
-    .menu-line-group {
+  .menu-line-group {
     width: 100%;
     height: 100%;
     justify-content: space-between;
@@ -911,7 +908,6 @@ input::-webkit-input-placeholder {
     flex-direction: column;
   }
 }
-
 
 @media (min-width: 641px) and (max-width: 1199px) {
   .header-wrapper {
@@ -928,7 +924,6 @@ input::-webkit-input-placeholder {
   .title {
     margin-top: 103px;
     font-size: 40px;
-
   }
   .trend-items {
     flex-wrap: wrap;
@@ -990,7 +985,14 @@ input::-webkit-input-placeholder {
   .products-items {
     flex-wrap: wrap;
   }
-} 
+  .product {
+    width: calc(50% - 50px);
+  }
+  .info-preview-product,
+  .info-img-product {
+    width: 100%;
+  }
+}
 @media (orientation: landscape) and (min-width: 641px) and (max-width: 1199px) {
   .trend-wrapper {
     width: 25%;
@@ -1000,14 +1002,14 @@ input::-webkit-input-placeholder {
     padding-left: 4px;
   }
 }
- 
+
 @media (max-width: 640px) {
   .popup {
     box-sizing: border-box;
     padding: 0 15px;
     position: absolute;
   }
-   .popup-container {
+  .popup-container {
     padding: 30px 27px;
   }
   .menu-toggle {
@@ -1034,7 +1036,7 @@ input::-webkit-input-placeholder {
     font-size: 26px;
     line-height: 1.7;
   }
- 
+
   .trend-items {
     flex-wrap: wrap;
     margin-bottom: 44px;
@@ -1057,7 +1059,7 @@ input::-webkit-input-placeholder {
   .info-preview {
     width: 100%;
   }
- 
+
   .info-img {
     width: 100%;
     margin-bottom: 16px;
@@ -1131,5 +1133,3 @@ input::-webkit-input-placeholder {
     padding-top: 4px;
   }
 }
-
-
